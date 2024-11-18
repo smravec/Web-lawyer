@@ -396,52 +396,6 @@
 
     </div>
 
-    <!-- <script>
-        function openEmailClient() {
-          const subject = encodeURIComponent(document.getElementById('name').value);
-          const message = encodeURIComponent(document.getElementById('message').value);
-      
-          const email = 'kancelaria@ak-antal.sk'; 
-          const mailtoLink = `mailto:${email}?subject=${subject}&body=${message}`;
-      
-          window.location.href = mailtoLink;
-        }
-      </script> -->
-
-    <!-- <script>
-        ocument.getElementById('kontakt-form').addEventListener('submit', function(e) {
-    e.preventDefault();
-
-    const submitButton = this.querySelector('button[type="submit"]');
-    const originalButtonText = submitButton.textContent;
-    submitButton.textContent = 'Odosielam...';
-    submitButton.disabled = true;
-
-    const formData = new FormData(this);
-
-    fetch('send_email.php', {
-        method: 'POST',
-        body: formData
-    })
-    .then(response => response.text())
-    .then(data => {
-        if (data.includes('úspešne')) {
-            alert('Správa bola úspešne odoslaná!');
-            document.getElementById('kontakt-form').reset();
-        } else {
-            alert('Chyba: ' + data);
-        }
-    })
-    .catch(error => {
-        alert('Chyba pri odosielaní: ' + error);
-    })
-    .finally(() => {
-        submitButton.textContent = originalButtonText;
-        submitButton.disabled = false;
-    });
-    });
-    </script> -->
-
     <footer> 
 
         <div id="footer-container">
