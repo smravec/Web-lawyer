@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Časté otázky a praktické rady</title>
+    <link rel="icon" type="image/x-icon" href="/assets/logo.png">
+
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+</head>
+<body>
+    <nav id="navbar">
+    
+        <div id="links">
+
+            <button class="menu-button" onclick="toggleMenu()">
+                <span class="material-symbols-outlined">
+                    menu
+                </span>
+            </button>
+
+                <div id="sideMenu" class="menu">
+                    <button class="menu-close" onclick="toggleMenu()">
+                        <span class="material-symbols-outlined">
+                            close
+                        </span>
+                    </button>
+                    <a href="index.html#hero-container" id="first-menu" onclick="toggleMenu()" >Úvod</a>
+                    <a href="index.html#law1" onclick="toggleMenu()">Oblasti Práva</a>
+                    <a href="index.html#law2" onclick="toggleMenu()">Právne Služby</a>
+                    <a href="index.html#our-team" onclick="toggleMenu()">Náš Tím</a>
+                    <a href="faq.html" onclick="toggleMenu()">Praktické Rady</a>
+                </div>
+            
+                <div id="overlay" class="overlay" onclick="toggleMenu()"></div>
+            
+                <script>
+                    function toggleMenu() {
+                        var menu = document.getElementById("sideMenu");
+                        var overlay = document.getElementById("overlay");
+                        menu.classList.toggle("active");
+                        overlay.classList.toggle("active");
+                    }
+                </script>
+
+            <div id="links-left">
+                <a href="index.html#hero-container" id="image-link"><img src="assets/logo.png" alt=""></a>
+                <a href="index.html#law1">Oblasti Práva</a> 
+                <a href="index.html#law2">Právne Služby</a> 
+                <a href="index.html#our-team">Náš Tím</a>
+                <a href="faq.html">Praktické Rady</a>
+            </div>
+
+            <div id="links-right">
+
+                <a id="contact-button" href="#footer-container">
+                    Kontakt
+                    <span class="material-symbols-outlined">
+                        keyboard_arrow_down
+                    </span>
+                </a>
+
+                <div id="number">
+                    <span class="material-symbols-outlined">
+                        phone_in_talk
+                    </span>
+                    0908 113 996
+                </div> 
+                <div id="number">
+                    <span class="material-symbols-outlined">
+                        mail
+                    </span>
+                    advokat@ak-antal.sk
+                </div>          
+            </div>
+        </div>
+
+    </nav>
+    
+
+    <div class="faq-content">
+
+        <div id="faq-img">
+            <h1>
+                Časté otázky a praktické rady
+            </h1>
+        </div>
+        
+        <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(this)"><strong>+</strong> Prišla mi žaloba zo súdu</div>
+            <div class="faq-answer">
+                Pre bežného človeka je doručenie žaloby zo súdu nepríjemná skúsenosť. 
+                Byť žalovaný vytvára v živote značný prvok neistoty, 
+                k čomu určite prispieva i spôsob, akým súd dokumenty doručuje. 
+                V zásade obdržíte veľké množstvo dokladov, ktoré bývajú nielen neprehľadné, 
+                ale v zásielke nebývajú ani roztriedené. 
+                Najskôr je najdôležitejšie identifikovať a prečítať si samotnú žalobu 
+                (to, čoho sa žalobca domáha býva spravidla uvedené na konci žaloby ako tzv. žalobný petit). 
+                Následne je potrebné v dokladoch nájsť výzvu súdu na ďalší 
+                postup - výzvu na vyjadrenie k žalobe, pričom súd stanovuje na tento úkon primeranú lehotu. 
+                V prípade, ak by ste sa v tejto lehote nevyjadrili, 
+                môžete spor prehrať kontumačne napriek tomu, že ste to Vy, kto je v práve. 
+                V každom prípade, ak by ste sa aj chceli v súdnom konaní zastupovať sami, 
+                odporúčame sa minimálne poradiť s advokátom, ktorý Vám vysvetlí, ako vo veci postupovať. 
+            </div>
+        </div>
+    
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleAnswer(this)"><strong>+</strong> Ako prepísať nehnuteľnosť</div>
+            <div class="faq-answer">
+                Väčšina ľudí za celý život uzatvára zmluvu o prevode vlastníckeho práva k nehnuteľnosti len niekoľkokrát.
+                Je preto namieste byť v týchto situáciách obozretný a chrániť svoj majetok a svoje záujmy.
+                Skúsený advokát dokáže rýchlo identifikovať prípadné riziká spojené s nehnuteľnosťou, 
+                s osobou, ktorá je druhou zmluvnou stranou a klienta pred týmito rizikami zabezpečiť. 
+                V prípade jednoduchších zmlúv uzatváraných medzi rodinnými príslušníkmi je samozrejme 
+                možné spísať si zmluvu i sám, v takých prípadoch sa však častokrát stáva, že katastrálny
+                orgán pre technické chyby zmluvy konanie preruší, čo spôsobí zbytočné komplikácie. 
+                Zároveň, v prípade podania návrhu na vklad advokátom je tento podávaný v zásade elektronicky,
+                čím dôjde k zníženiu správneho poplatku na polovicu.
+            </div>
+        </div>
+    
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleAnswer(this)"><strong>+</strong> Som trestne stíhaný / bolo voči mne podané trestné oznámenie</div>
+            <div class="faq-answer">
+                V prípade, že ste podozrivý zo spáchania trestného činu (bolo voči Vám podané trestné oznámenie,
+                boli ste predvolaný na políciu ako podozrivý) odporúčame ihneď sa vo veci poradiť s advokátom. 
+                V takýchto prípadoch je viac ako vhodné nič nepodceniť. 
+                Každý prípad je individuálny a zaslúži si i individuálny prístup. 
+                Základnou radou je však dodržanie obozretnosti a zabezpečenie si odbornej právnej pomoci.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleAnswer(this)"><strong>+</strong> Bol som predvolaný ako svedok</div>
+            <div class="faq-answer">
+                Či už ide o civilné alebo trestné konanie, každý má povinnosť vypovedať ako svedok. 
+                Zákon však pozná prípady, kedy je možné odoprieť vypovedať. Ide najmä o prípad, 
+                ak by si svedok výpoveďou sám sebe alebo blízkym osobám spôsobil nebezpečenstvo trestného stíhania.
+                Navyše, ak by ste predvolanie ignorovali, súd Vám môže uložiť poriadkovú pokutu a v krajných prípadoch 
+                Vás môže nechať predviesť políciou.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleAnswer(this)"><strong>+</strong> Otec dieťaťa neplatí výživné</div>
+            <div class="faq-answer">
+                V prípade, ak rodičia nie sú na plnení vyživovacej povinnosti dohodnutí,
+                túto môže stanoviť súd. Ak už vo veci bolo vydané súdne rozhodnutie, 
+                ktoré nariadilo platiť povinnému rodičovi výživné, tak v prípade neplnenia je možné podať návrh na exekúciu. 
+                S takýmto návrhom Vám pomôže a vo Vašom mene elektronicky podá buď advokát alebo priamo exekútor. 
+                V prípade, že povinný rodič neplatí výživné dlhšiu dobu, 
+                je na mieste zvážiť podanie trestného oznámenia pre trestný čin zanedbania povinnej výživy. 
+                Povinný rodič v takom prípade častokrát výživné doplatí, aby sa vyhol trestnému stíhaniu. 
+               <br>
+               <br>
+                Ak výživné nebolo súdom stanovené a rodič, ktorý nemá dieťa v opatere, neprispieva na jeho výživu, 
+                tak je možné kedykoľvek podať návrh na súd, aby výživné stanovil súd. 
+                Výživné sa v takom prípade stanovujem spravidla odo dňa podania návrhu, 
+                preto odporúčame takýto návrh podať čo najskôr. 
+                Výška výživného sa odvíja najmä od majetkových možností (zárobku) povinného rodiča 
+                a odôvodnených potrieb dieťaťa (nákladov naň). 
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleAnswer(this)"><strong>+</strong> Ako zvýšiť výživné</div>
+            <div class="faq-answer">
+                Ak bolo výživné v minulosti stanovené súdom, tak jeho výšku je možné súdne i zmeniť. 
+                Zmena výživného je odôvodnená pri zmene pomerov. 
+                Ide napríklad o nárast nákladov na dieťa, 
+                ak povinný rodič dosahuje vyšší zárobok, atď.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleAnswer(this)"><strong>+</strong> Potrebujem skontrolovať zmluvu</div>
+            <div class="faq-answer">
+                Či už ide o zmluvu o prevode nehnuteľnosti,
+                pracovnú zmluvu alebo zmluvu o dielo so stavebnou firmou, 
+                každý zásadnejší právny úkon si vyžaduje Vašu pozornosť.
+                Pred podpísaním akejkoľvek zmluvy je potrebné skontrolovať svoje údaje, 
+                predmet zmluvy (teda to, na čom ste sa dohodli a či je to to, čo si naozaj prajete)
+                a všetky vedľajšie ustanovenia týkajúce sa lehôt alebo zmluvných pokút.
+                Ak by ste v zmluve niečomu nerozumeli alebo sa Vám tam niečo nepozdávalo,
+                nehanbite sa na to upozorniť, prípadne si vyžiadať čas na preštudovanie 
+                alebo vyhľadanie odborného právneho poradenstva. 
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleAnswer(this)"><strong>+</strong> Náhrada škody pri dopravnej nehode</div>
+            <div class="faq-answer">
+                Dopravných nehôd žiaľ pribúda, a nanešťastie mnohé z nich zanechajú následky na zdraví,
+                majetku a psychike poškodeného. V takomto prípade môže mať poškodený 
+                viacero vymožiteľných nárokov. Nárok na náhradu škody na majetku zahŕňa 
+                skutočnú škodu na vozidle, prípadne na iných pri nehode poškodených veciach.
+                V súvislosti s opravou poškodeného vozidla má poškodený vo väčšine prípadov i 
+                nárok na náhradu za prenájom náhradného vozidla. V praxi býva častým problémom 
+                stanovenie výšky náhrady škody pri oprave vozidla, respektíve určení jeho hodnoty 
+                pri totálnej škode na vozidle. V takýchto prípadoch je vhodné sa nechať zastúpiť 
+                advokátom a žiadať plnú náhradu škody.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleAnswer(this)"> <strong>+</strong> Náhrada škody na zdraví pri dopravnej nehode</div>
+            <div class="faq-answer">
+                Dopravné nehody majú častokrát vážne následky na zdraví jej účastníkov. 
+                V prípade, ak ste boli účastníkom dopravnej nehody a utrpeli ste ako 
+                poškodený zranenia, máte právo na náhradu škody na zdraví. 
+                Môžete si súčasne uplatniť viacero druhov nárokov a to 1) Bolestné, 2) 
+                Sťaženie spoločenského uplatnenia, 3) Strata na zárobku počas PN, 4) 
+                Strata na zárobku po skončení PN, 5) Strata na dôchodku, 6) Jednorazové odškodné,
+                7) Náklady spojené sliečením.
+                <br>
+                <br>
+                Pojem bolestné predstavuje odškodnenie poškodeného za fyzickú
+                a psychickú bolesť spôsobenú zranením pri dopravnej nehode.
+                Sťaženie spoločenského uplatnenia je náhrada za trvalé následky
+                zranení poškodeného, ktoré objektívne obmedzujú jeho schopnosť
+                vykonávať bežné činnosti alebo prácu. Uplatnenie spravodlivej 
+                kompenzácie poškodeného býva zložité, preto odporúčame dať sa 
+                pri týchto úkonoch právne zastúpiť. V prípade zníženia alebo 
+                odmietnutia nároku zo strany poisťovne odporúčame kontaktovať advokáta. 
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleAnswer(this)"><strong>+</strong> Náhrada škody pri dopravnej nehode - nemajetková ujma</div>
+            <div class="faq-answer">
+                Poškodený sa môže domáhať okrem vyššie uvedených nárokov aj nároku na 
+                zaplatenie náhrady nemajetkovej ujmy v peniazoch, ak dopravná nehoda mala 
+                vplyv aj na jeho súkromný alebo rodinný život (napr. prežívanie šoku/smútku 
+                po dopravnej nehode najmä stratou blízkej osoby).
+                <br>
+                <br>
+                Nárok na náhradu nemajetkovej ujmy môžu mať teda aj pozostalí, 
+                ak pri dopravnej nehode dôjde k usmrteniu ich blízkej osoby 
+                (spravidla pozostalý manžel, deti, prípadne súrodenci). 
+                Nemajetková ujma v tomto prípade spočíva v tom, 
+                že usmrtením im blízkej osoby došlo k nenapraviteľnému pretrhnutiu 
+                citových a rodinných väzieb. V dôsledku toho sú tieto osoby ukrátené na rodinnom 
+                a súkromnom živote stratou blízkej osoby. Výška náhrady sa určuje s prihliadnutím 
+                na závažnosť nemajetkovej ujmy a okolnosti, za ktorých k porušeniu práva došlo. 
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        function toggleAnswer(element) {
+            const answer = element.nextElementSibling;
+            answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+
+    <footer id="footer-margin"> 
+
+        <div id="footer-container">
+
+        <div id="left-footer">
+            <div id="map" style="max-width:100%;list-style:none; transition: none;overflow:hidden;height:300px;"><div id="embed-map-canvas" style="height:100%; width:100%;max-width:100%;"><iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=Hlavná+7/13,+917+01+Trnava&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe></div><a class="google-map-html" rel="nofollow" href="https://www.bootstrapskins.com/themes" id="enable-map-data">premium bootstrap themes</a><style>#embed-map-canvas img{max-width:none!important;background:none!important;font-size: inherit;font-weight:inherit;}</style></div>
+            
+        </div>
+
+        <div id="right-footer">
+            <p id="first-footer">
+                Advokátska kancelária JUDr. Michal Antal, PhD., s.r.o. 
+            </p>
+            <p class="not-first">
+                Sídlo: Hlavná 13, 917 01 Trnava (Pasáž Europa na pešej zóne)
+            </p>
+            <p class="not-first">
+                Tel. kontakt: 0908 113 996, 0915 444 491
+            </p>
+
+            <p class="not-first">
+                bank. spojenie: SK73 8330 0000 0027 0242 4114
+
+            </p>
+
+
+            <p class="not-first" id="last-footer">
+                E-mail: advokat@ak-antal.sk, kancelaria@ak-antal.sk 
+            </p>
+
+            <a href="/documents/GDPR.pdf">Ochrana osobných údajov</a>
+            <a href="/documents/VOP.pdf">Všeobecné obchodné podmienky</a>
+        </div>
+
+    </div>
+
+    <div id="image-footer" >
+        <img src="/assets/rect1.png">
+            <p>
+                Poradenstvo ktorému <br>
+                môžete dôverovať
+            </p>
+    </div>
+        
+    </footer>
+    
+</body>
+</html>

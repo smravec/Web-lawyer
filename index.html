@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Váš dôveryhodný partner vo svete práva</title>
+    <link rel="icon" type="image/x-icon" href="/assets/logo.png">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+<body>
+    <nav id="navbar">
+    
+        <div id="links">
+
+            <button class="menu-button" onclick="toggleMenu()">
+                <span class="material-symbols-outlined">
+                    menu
+                </span>
+            </button>
+
+                <div id="sideMenu" class="menu">
+                    <button class="menu-close" onclick="toggleMenu()">
+                        <span class="material-symbols-outlined">
+                            close
+                        </span>
+                    </button>
+                    <a href="#hero-container" id="first-menu" onclick="toggleMenu()" >Úvod</a>
+                    <a href="#law1" onclick="toggleMenu()">Oblasti Práva</a>
+                    <a href="#law2" onclick="toggleMenu()">Právne Služby</a>
+                    <a href="#our-team" onclick="toggleMenu()">Náš Tím</a>
+                    <a href="faq.html" onclick="toggleMenu()">Praktické Rady</a>
+                </div>
+            
+                <div id="overlay" class="overlay" onclick="toggleMenu()"></div>
+            
+                <script>
+                    function toggleMenu() {
+                        var menu = document.getElementById("sideMenu");
+                        var overlay = document.getElementById("overlay");
+                        menu.classList.toggle("active");
+                        overlay.classList.toggle("active");
+                    }
+                </script>
+
+            <div id="links-left">
+                <a href="#hero-container" id="image-link"><img src="assets/logo.png" alt=""></a>
+                <a href="#law1">Oblasti Práva</a> 
+                <a href="#law2">Právne Služby</a> 
+                <a href="#our-team">Náš Tím</a>
+                <a href="faq.html">Praktické Rady</a>
+            </div>
+
+            <div id="links-right">
+
+                <a id="contact-button" href="#footer-container">
+                    Kontakt
+                    <span class="material-symbols-outlined">
+                        keyboard_arrow_down
+                    </span>
+                </a>
+
+                <div id="number">
+                    <span class="material-symbols-outlined">
+                        phone_in_talk
+                    </span>
+                    0908 113 996
+                </div> 
+                <div id="number">
+                    <span class="material-symbols-outlined">
+                        mail
+                    </span>
+                    advokat@ak-antal.sk
+                </div>          
+            </div>
+        </div>
+
+    </nav>
+
+    <hero>
+        <div id="hero-container">
+        <div id="text-container">
+        <h1>
+            <span>JUDr. Michal Antal, PhD. </span> <br> 
+            Advokátska kancelária  
+        </h1>
+
+        <p>
+            Váš dôveryhodný partner <br/>
+            vo svete práva
+        </p>
+        </div>
+
+        <a id="kontakt-btn" href="#kontakt-container">Kontaktujte nás</a>       
+        </div>
+    </hero>
+ 
+    <div id="subhero">
+        <div class="subhero-section" id="sub1">
+            <span class="material-symbols-outlined">
+                account_balance
+            </span>
+
+            <div class="subhero-text">
+                <h1 id="header1">
+                    Dôvera založená <br/> 
+                    na skúsenostiach
+                </h1>
+
+                <h1 id="header2">
+                    Dôvera založená 
+                    na skúsenostiach
+                </h1>
+
+                <p id="paragraph1">
+                    Spoľahlivosť, kvalita našich služieb <br/> 
+                    a spokojnosť našich klientov <br/> 
+                    je pre nás prioritou.
+               </p>
+               
+               <p id="paragraph2">
+                Spoľahlivosť, kvalita našich služieb 
+                a spokojnosť našich klientov  
+                je pre nás prioritou.
+                </p>
+            </div>    
+        </div>
+
+        <div class="subhero-section" id="sub2">
+            <span class="material-symbols-outlined">
+                balance
+                </span>
+
+            <div class="subhero-text">
+                <h1 id="header1">
+                    Komplexné právne <br/> 
+                    služby
+                </h1>
+
+                <h1 id="header2">
+                    Komplexné právne 
+                    služby
+                </h1>
+
+                <p id="paragraph1">
+                    Poskytovanie právnych služieb <br/>
+                    vo všetkých základných oblastiach práva
+                </p>
+
+                <p id="paragraph2">
+                    Poskytovanie právnych služieb
+                    vo všetkých základných oblastiach práva
+                </p>
+            </div>  
+        </div>
+
+        <div class="subhero-section" id="sub3">
+            <span class="material-symbols-outlined">
+                gavel
+            </span>
+
+            <div class="subhero-text">
+                <h1 id="header1">
+                    Individuálny prístup <br/>
+                    a inovatívne riešenia
+                </h1>
+
+                <h1 id="header2">
+                    Individuálny prístup 
+                    a inovatívne riešenia
+                </h1>
+
+                <p id="paragraph1">
+                    Každá situácia, problém sú jedinečné <br/>
+                    a vyžadujú si individuálne <br/>
+                    a premyslené riešenie <br/>
+                </p>
+
+                <p id="paragraph2">
+                    Každá situácia, problém sú jedinečné 
+                    a vyžadujú si individuálne 
+                    a premyslené riešenie 
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <img id="logo_full" src="/assets/logo.png">
+    <h1 id="about-us">
+        O nás
+    </h1>
+
+    <div id="about">
+        Naša spoločnosť predstavuje dlhodobo etablovanú trnavskú advokátsku kanceláriu,
+        ktorá svojim klientom ponúka právne služby podložené viac ako 
+        desaťročnými skúsenosťami v oblasti advokácie. Spoľahlivosť a kvalita našich 
+        služieb je pre nás prioritou a sme presvedčení, že dôvera medzi advokátom 
+        a klientom je základom obojstranne spokojnej spolupráce. O správnosti nášho 
+        prístupu nás utvrdzuje jednak dlhoročná úspešná kooperácia s našimi 
+        korporátnymi klientmi a zároveň, že minulí klienti sa pri výskyte nových 
+        právnych problémov na nás obracajú opakovane a naše právne služby 
+        odporúčajú i svojim známym.
+    </div>
+
+
+    <div id="law-container">
+        <div class="law-header" id="law1">
+            <h1>
+                Oblasti práva
+            </h1>
+
+            <p>
+                Naša advokátska kancelária poskytuje právne služby ako fyzickým, <br/>
+                tak i právnickým osobám.
+            </p>
+        </div>
+            
+            <div class="law-fields-section">
+
+                <h2>
+                    Oblasti praxe pre fyzické osoby
+                </h2>
+
+                <h3>
+                    občianske právo 
+                </h3>
+
+                <p>
+                    • majetkové právo, vrátane vymáhania pohľadávok <br>
+                    • právo nehnuteľností <br>
+                    • spisovanie, kontrola a pripomienkovanie zmlúv a iných právnych dokumentov 
+                </p>
+
+                <h3>
+                    rodinné právo 
+                </h3>
+
+                <p>
+                    • poradenstvo a zastupovanie v rozvodovom konaní (vrátane majetkoprávneho vysporiadania po rozvode) <br> 
+                    • poradenstvo a zastupovanie v konaniach týkajúcich sa úpravy práv a povinností k maloletým <br>
+                    • právne služby týkajúce sa vyživovacej povinnosti 
+                </p>
+
+                <h3>
+                    trestné právo 
+                </h3>
+
+                <p>
+                    • obhajoba v trestnom konaní <br>
+                    • zastupovanie a uplatňovanie práv poškodených v trestnom konaní <br>
+                    • spisovanie žiadostí o podmienečné prepustenie z výkonu trestu odňatia slobody
+                </p>
+
+                <h3>
+                    ústavné právo  
+                </h3>
+                <p>
+                    • spisovanie ústavných sťažností a zastupovanie pred Ústavným súdom SR <br>
+                    • spisovanie sťažností na Európsky súd pre ľudské práva v Štrasburgu a zastupovanie v konaní
+                </p>
+
+                <h2>
+                    Oblasti praxe pre právnické osoby
+                </h2>
+
+
+                <p>
+                    Naša kancelária poskytuje kompletné právne služby týkajúce sa správy a riadenia právnických osôb. <br>
+                    Najmä ide o nasledujúce služby:
+                </p>
+
+                <p>
+                    • komplexné obchodnoprávne poradenstvo <br>
+                    • služby obchodného a živnostenského registra <br>
+                    • vymáhanie pohľadávok <br>
+                    • kompletná zmluvná agenda <br>
+                    • personálna agenda v rozsahu individuálneho pracovného práva
+                </p>
+            </div>
+
+            <div class="law-header" id="law2">
+                <h1>
+                    Právne služby
+                </h1>
+    
+                <p>
+                    Pri poskytovaní právnych služieb si naša advokátska kancelária zakladá<br> 
+                    na profesionálnosti a osobnom prístupe. 
+                </p>
+            </div>
+            
+            <div class="law-fields-section">
+                <h2>
+                    Poskytujeme najmä nasledovné právne služby:
+                </h2>
+                <h3>
+                    Zastupovanie klientov v súdnych a iných konaniach                    
+                </h3>
+                <p>
+                    • podávame žaloby a návrhy na začatie súdneho konania <br>
+                    • zastupujeme klientov v súdnych konaniach <br>
+                    • zúčastňujeme sa mimosúdnych rokovaní s protistranou sporu <br>
+                    • zastupujeme v správnych konaniach a v konaniach pred inými orgánmi štátnej správy <br>
+                    • zabezpečujeme mimosúdne riešenie sporov
+                </p>
+
+
+                <h3>
+                    Vymáhanie pohľadávok
+                </h3>
+                <p>
+                    • vymáhame pohľadávky v obchodnom styku a v občianskoprávnych vzťahoch <br>
+                    • zastupujeme v súdnych a v exekučných konaniach spojených s vymáhanými pohľadávkami <br>
+                    • v koordinácii s klientmi spravujeme pohľadávky v konkurzných a reštrukturalizačných konaniach
+                </p>
+
+
+
+                <h3>
+                    Poskytovanie právneho poradenstva         
+                </h3>
+                <p>
+                    • vypracovávame právne posúdenia a analýzy <br>
+                    • poskytujeme právne poradenstvo i mimo sporovej agendy
+                </p>
+
+
+                <h3>
+                    Spisovanie zmlúv a iných právnych listín     
+                </h3>
+                <p> 
+                    • spisujeme zmluvy, prípadne vykonávame kontrolu a posúdenie už spísaných zmlúv <br>
+                    • vypracovávame iné právne listiny
+                </p>
+
+
+                <h3>
+                    Zakladanie a správa spoločností  
+                </h3>
+                <p id="law3"> 
+                    • zakladáme obchodné spoločnosti <br>
+                    • zabezpečujeme zmeny údajov zapísaných v obchodnom registri <br>
+                    • riešime zmeny vzťahov v spoločnostiach <br>
+                    • zastupujeme v konaniach pred obchodným a živnostenským registrom
+                </p>
+            </div>
+    </div>
+
+    
+    <div id="our-team">
+        <h1>Náš Tím</h1>
+        
+        <div id="our-team-content">
+            <div class="our-team-container">
+                <img src="/assets/Foto Antal.jpg" class="our-team-picture"/>
+                <h2>
+                    JUDr. Michal Antal, PhD., advokát
+                </h2>
+                <p> 
+                    V advokácii pracuje od roku 2011. V roku 2015 úspešne zložil advokátsku skúšku 
+                    a založil vlastnú advokátsku kanceláriu. Ovláda anglický, francúzsky jazyk 
+                    a základy gréčtiny.
+                </p>
+            </div>
+
+            <div class="our-team-container">
+                
+                <img src="/assets/Foto Baláž.jpg" class="our-team-picture"/>
+                <h2>
+                    Mgr. Denis Baláž, advokátsky koncipient
+                </h2>
+                <p> 
+                    V roku 2024 úspešne ukončil právne vzdelanie na Trnavskej univerzite, 
+                    právnickej fakulte. Dohovorí sa po anglicky a francúzsky.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div id="kontakt-container">
+        <h1 id="kontakt-a">Kontakt</h1>
+
+
+        <form id="kontakt-form"  action="send_email.php" method="POST">
+            <input type="text" id="name" placeholder="Meno a Priezvisko"  name="name" required><br><br>
+            <input type="email" id="email" placeholder="E-mail" name="email" required><br><br>
+
+            <textarea id="message" name="message" placeholder="Správa" rows="5" required></textarea><br><br>
+
+            <button type="submit">Odoslať</button>
+        </form>
+
+    </div>
+
+    <!-- <script>
+        function openEmailClient() {
+          const subject = encodeURIComponent(document.getElementById('name').value);
+          const message = encodeURIComponent(document.getElementById('message').value);
+      
+          const email = 'kancelaria@ak-antal.sk'; 
+          const mailtoLink = `mailto:${email}?subject=${subject}&body=${message}`;
+      
+          window.location.href = mailtoLink;
+        }
+      </script> -->
+
+    <!-- <script>
+        ocument.getElementById('kontakt-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    const submitButton = this.querySelector('button[type="submit"]');
+    const originalButtonText = submitButton.textContent;
+    submitButton.textContent = 'Odosielam...';
+    submitButton.disabled = true;
+
+    const formData = new FormData(this);
+
+    fetch('send_email.php', {
+        method: 'POST',
+        body: formData
+    })
+    .then(response => response.text())
+    .then(data => {
+        if (data.includes('úspešne')) {
+            alert('Správa bola úspešne odoslaná!');
+            document.getElementById('kontakt-form').reset();
+        } else {
+            alert('Chyba: ' + data);
+        }
+    })
+    .catch(error => {
+        alert('Chyba pri odosielaní: ' + error);
+    })
+    .finally(() => {
+        submitButton.textContent = originalButtonText;
+        submitButton.disabled = false;
+    });
+    });
+    </script> -->
+
+    <footer> 
+
+        <div id="footer-container">
+
+        <div id="left-footer">
+            <div id="map" style="max-width:100%;list-style:none; transition: none;overflow:hidden;height:300px;"><div id="embed-map-canvas" style="height:100%; width:100%;max-width:100%;"><iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=Hlavná+7/13,+917+01+Trnava&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe></div><a class="google-map-html" rel="nofollow" href="https://www.bootstrapskins.com/themes" id="enable-map-data">premium bootstrap themes</a><style>#embed-map-canvas img{max-width:none!important;background:none!important;font-size: inherit;font-weight:inherit;}</style></div>
+        </div>
+
+        <div id="right-footer">
+            <p id="first-footer">
+                Advokátska kancelária JUDr. Michal Antal, PhD., s.r.o. 
+            </p>
+            <p class="not-first">
+                Sídlo: Hlavná 13, 917 01 Trnava (Pasáž Europa na pešej zóne)
+            </p>
+            <p class="not-first">
+                Tel. kontakt: 0908 113 996, 0915 444 491
+            </p>
+
+            <p class="not-first">
+                 bank. spojenie: SK73 8330 0000 0027 0242 4114
+            </p>
+
+
+            <p class="not-first" id="last-footer">
+                E-mail: advokat@ak-antal.sk, kancelaria@ak-antal.sk 
+            </p>
+
+            <a href="/documents/GDPR.pdf">Ochrana osobných údajov</a>
+            <a href="/documents/VOP.pdf">Všeobecné obchodné podmienky</a>
+        </div>
+
+    </div>
+
+    <div id="image-footer" >
+        <img src="/assets/rect1.png">
+            <p>
+                Poradenstvo ktorému <br>
+                môžete dôverovať
+            </p>
+    </div>
+        
+    </footer>
+</body>
+</html>
